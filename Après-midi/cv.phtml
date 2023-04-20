@@ -1,4 +1,44 @@
-<?php var_dump($_GET); ?>
+<?php var_dump($_GET); 
+    
+    if(isset($_GET["color"]))
+        $color = $_GET["color"];
+    
+    if(isset($_GET["nom"]))
+        $nom = $_GET["nom"];
+        
+    if(isset($_GET["prenom"]))
+        $prenom = $_GET["prenom"];
+        
+    if(isset($_GET["email"]))
+        $email = $_GET["email"];
+    
+    if(isset($_GET["telephone"]))
+        $telephone = $_GET["telephone"];
+        
+    if(isset($_GET["linkedin"]))
+        $linkedin = $_GET["linkedin"];
+        
+    if(isset($_GET["github"]))
+        $github = $_GET["github"];
+        
+    if(isset($_GET["biographie"]))
+        $biographie = $_GET["biographie"];
+        
+    if(isset($_GET["loisir"]))
+        $loisir = $_GET["loisir"];
+        
+    if(isset($_GET["prog"]))
+        $prog = $_GET["prog"];
+        
+    if(isset($_GET["frame"]))
+        $frame = $_GET["frame"];
+        
+    if(isset($_GET["log"]))
+        $log = $_GET["log"];
+        
+    if(isset($_GET["lang"]))
+        $lang = $_GET["lang"];
+?>
 <!DOCTYPE html>
 <html>
     <head>
@@ -11,9 +51,9 @@
         <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@200;400;600;800&display=swap" rel="stylesheet">
         <link rel="stylesheet" href="style.css" />
     </head>
-    <body id="cv" class="blue">
+    <body id="cv" class="<?=$color;?>">
         <header>
-            <h1><span><?php echo $_GET["nom"]; ?></span> <?php echo $_GET["prenom"]; ?></h1>
+            <h1><span><?=$nom; ?></span> <?=$prenom; ?></h1>
             <h2>Intitulé du poste</h2>
         </header>
         <main>
@@ -28,7 +68,7 @@
                             Email
                         </dt>
                         <dd>
-                            <?php echo $_GET["email"]; ?>
+                            <?=$email; ?>
                         </dd>
                         <dt>
                             Téléphone
@@ -57,18 +97,16 @@
                 <section>
                     <h4>Loisirs</h4>
                     <ul>
+                        <?php
+                        
+                            foreach ($loisir as $item)
+                            {
+                        ?>
                         <li>
-                            <?php echo $_GET["loisir[0]"];?>
+                            <?=$item;?>
                         </li>
-                        <li>
-                            <?php echo $_GET["loisir-2"];?>
-                        </li>
-                        <li>
-                            <?php echo $_GET["loisir-3"];?>
-                        </li>
-                        <li>
-                            <?php echo $_GET["loisir-4"];?>
-                        </li>
+                        <?php } ?>
+                        
                     </ul>
                 </section>
             </section>
@@ -77,37 +115,49 @@
                 <section>
                     <h4>Langages des programmation</h4>
                     <ul>
-                        <li>HTML</li>
-                        <li>CSS</li>
-                        <li>JavaScript</li>
-                        <li>PHP</li>
-                        <li>SQL</li>
+                        <?php 
+                        
+                            foreach ($prog as $item)
+                            {
+                        ?>
+                            <li><?=$item; ?></li>
+                        <?php } ?>
                     </ul>
                 </section>
                 <section>
                     <h4>Frameworks & Librairies</h4>
                     <ul>
-                        <li>Sass</li>
-                        <li>Bootstrap</li>
-                        <li>Symfony</li>
-                        <li>Laravel</li>
+                        <?php 
+                        
+                            foreach ($frame as $item)
+                            {
+                        ?>
+                            <li><?=$item; ?></li>
+                        <?php } ?>
                     </ul>
                 </section>
                 <section>
                     <h4>Logiciels</h4>
                     <ul>
-                        <li>Photoshop</li>
-                        <li>Illustrator</li>
-                        <li>XD</li>
-                        <li>Figma</li>
+                        <?php 
+                        
+                            foreach ($log as $item)
+                            {
+                        ?>
+                            <li><?=$item; ?></li>
+                        <?php } ?>
                     </ul>
                 </section>
                 <section>
                     <h4>Langues</h4>
                     <ul>
-                        <li>Anglais</li>
-                        <li>Français</li>
-                        <li>Arabe</li>
+                        <?php 
+                        
+                            foreach ($lang as $item)
+                            {
+                        ?>
+                            <li><?=$item; ?></li>
+                        <?php } ?>
                     </ul>
                 </section>
             </section>
