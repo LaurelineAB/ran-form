@@ -1,0 +1,160 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>RAN dernier jour : Formulaire</title>
+        <meta charset="UTF-8">
+        <link rel="stylesheet" href="style.css" type="text/css" />
+        <link rel="preconnect" href="https://fonts.googleapis.com">  
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>  
+        <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@200;400;600;800&display=swap" rel="stylesheet">
+    </head>
+    <body>
+        <form>
+            <div class="info">
+                <h2>INFORMATIONS</h2>
+                <fieldset>
+                    <label for="surname">Nom</label>
+                    <input type="text" name="surname"/>
+                </fieldset>
+                <fieldset>
+                    <label for="name">Prénom</label>
+                    <input type="text" name="name"/>
+                </fieldset>
+                <fieldset>
+                    <label for="email">Email</label>
+                    <input type="email" name="email"/>
+                </fieldset>
+                <fieldset>
+                    <label for="phone">Téléphone</label>
+                    <input type="tel" name="phone"/>
+                </fieldset>
+                <fieldset>
+                    <label for="linkedin">LinkedIn</label>
+                    <input type="text" name="linkedin"/>
+                </fieldset>
+                <fieldset>
+                    <label for="github">GitHub</label>
+                    <input type="text" name="github"/>
+                </fieldset>
+                <fieldset>
+                    <label for="bio">Biographie</label>
+                    <textarea name="bio" rows="10"/></textarea>
+                </fieldset>
+                <fieldset>
+                    <label for="hobby1">Loisir 1</label>
+                    <input type="text" name="hobby1"/>
+                </fieldset>
+                <fieldset>
+                    <label for="hobby2">Loisir 2</label>
+                    <input type="text" name="hobby2"/>
+                </fieldset>
+                <fieldset>
+                    <label for="hobby3">Loisir 3</label>
+                    <input type="text" name="hobby3"/>
+                </fieldset>
+                <fieldset>
+                    <label for="hobby4">Loisir 4</label>
+                    <input type="text" name="hobby4"/>
+                </fieldset>
+                <dl>
+                    <dt>Langues</dt>
+                    <dd>
+                        <input type="checkbox" name="fr" value="fr"/>
+                        <label for="fr">Français</label>
+                    </dd>
+                    <dd>
+                        <input type="checkbox" name="en" value="en"/>
+                        <label for="en">Anglais</label>
+                    </dd>
+                    <dd>
+                        <input type="checkbox" name="ar" value="ar"/>
+                        <label for="ar">Arabe</label>
+                    </dd>
+                    <dd>
+                        <input type="checkbox" name="br" value="br"/>
+                        <label for="br">Breton</label>
+                    </dd>
+                    <dd>
+                        <input type="checkbox" name="es" value="es"/>
+                        <label for="es">Espagnol</label>
+                    </dd>
+                </dl>
+            </div>
+            <div class="comp">
+                <h2>COMPETENCES</h2>
+                <dl class="prog">
+                    <dt><h3>Langages de Programmation</h3></dt>
+                    <dd>
+                        <input type="checkbox" name="html" id="html" value="html"/>
+                        <label for="html">HTML</label>
+                    </dd>
+                    <dd>
+                        <input type="checkbox" name="css" id="css" value="css"/>
+                        <label for="css">CSS</label>
+                    </dd>
+                    <dd>
+                        <input type="checkbox" name="js" id="js" value="js"/>
+                        <label for="js">JavaScript</label>
+                    </dd>
+                    <dd>
+                        <input type="checkbox" name="php" id="php" value="php"/>
+                        <label for="php">PHP</label>
+                    </dd>
+                    <dd>
+                        <input type="checkbox" name="sql" id="sql" value="sql"/>
+                        <label for="sql">SQL</label>
+                    </dd>
+                </dl>
+                <dl class="fl">
+                    <dt><h3>Frameworks & Librairies</h3></dt>
+                    <dd>
+                        <input type="checkbox" name="sass" id="sass" value="sass"/>
+                        <label for="sass">Sass</label>
+                    </dd>
+                    <dd>
+                        <input type="checkbox" name="boot" id="boot" value="boot"/>
+                        <label for="boot">Bootstrap</label>
+                    </dd>
+                    <dd>
+                        <input type="checkbox" name="symfony" id="symfony" value="symfony"/>
+                        <label for="symfony">Symfony</label>
+                    </dd>
+                    <dd>
+                        <input type="checkbox" name="laravel" id="laravel" value="laravel"/>
+                        <label for="laravel">Laravel</label>
+                    </dd>
+                </dl>
+                <dl class="log">
+                    <dt><h3>Logiciels</h3></dt>
+                    <dd>
+                        <input type="checkbox" name="photoshop" id="photoshop" value="photoshop"/>
+                        <label for="photoshop">Photoshop</label>
+                    </dd>
+                    <dd>
+                        <input type="checkbox" name="illus" id="illus" value="illus"/>
+                        <label for="illus">Illustrator</label>
+                    </dd>
+                    <dd>
+                        <input type="checkbox" name="xd" id="xd" value="xd"/>
+                        <label for="xd">XD</label>
+                    </dd>
+                    <dd>
+                        <input type="checkbox" name="figma" id="figma" value="figma"/>
+                        <label for="figma">Figma</label>
+                    </dd>
+                </dl>
+                <dl class="couleur">
+                    <dt><h3>Couleur du CV</h3><dt>
+                    <dd>Couleur<dd>
+                    <select name="color" id="color">
+                        <option value="blue">Bleu</option>
+                        <option value="red">Rouge</option>
+                    </select>
+                </dl>
+            </div>
+            <div class="btn">
+                <input type="submit" id="submit" value="ENVOYER"/>
+            </div>
+        </form>
+    </body>
+</html>

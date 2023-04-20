@@ -1,0 +1,70 @@
+body {
+    margin: 0;
+    padding: 0;
+    font-family: 'Montserrat', sans-serif;
+}
+form {
+    display:grid;
+    grip-template-rows : 90vh 10vh;
+    grid-template-columns : 1fr 1fr;
+    grid-template-areas: 
+    "info comp"
+    "btn .";
+    background-color: #fefefe;
+}
+div {
+    padding: 10px;
+}
+
+.info {grid-area:info;}
+.comp {grid-area:comp;}
+.btn {grid-area:btn;}
+
+h2 {
+    color: #24527c;
+    font-weight: 400;
+}
+h3 {
+    font-weight: normal;
+}
+fieldset {
+    border:none;
+    display:flex;
+    flex-direction:column;
+}
+label {
+        font-weight:600;
+}
+input, textarea, select {
+    border: 1px solid #bababa;
+}
+fieldset input, fieldset textarea {
+    width: 50%;
+}
+dl {
+    margin-top: 30px;
+}
+dd {
+    margin: 10px;
+}
+.couleur dd{
+    margin: 0px;
+}
+dt {
+    color:#24527c;
+    margin-bottom: 20px;
+    font-weight: 600;
+}
+select {
+    width: 300px;
+}
+#submit {
+    border:none;
+    background-color: #24527c;
+    color: white;
+    width:50%;
+    height: 30px;
+    display:block;
+    margin:auto;
+    font-weight:bold;
+}
